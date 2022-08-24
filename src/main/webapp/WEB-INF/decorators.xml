@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+
+	<excludes><!-- nam trong tag nay thi khong apply giao dien -->
+		<pattern>/api*</pattern>
+                <pattern>/sign*</pattern>
+	</excludes>
+
+	<!-- apply Sitemesh default template -->
+
+	<decorator name="web" page="web.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+        
+<!--        <decorator name="shop" page="shopDecorators.jsp">
+		<pattern>/shop</pattern>
+	</decorator>
+        <decorator name="category" page="shopDecorators.jsp">
+		<pattern>/category</pattern>
+	</decorator>
+        <decorator name="details" page="detailDecorators.jsp">
+		<pattern>/details</pattern>
+	</decorator>
+        <decorator name="cart" page="cartDecorators.jsp">
+		<pattern>/cart</pattern>
+	</decorator>-->
+        
+        <decorator name="admin" page="admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+</decorators>
